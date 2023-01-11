@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
       FileName = "PFHkey",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "a"
+      Key = "RJFEKszdf32435qaDFGHGz"
    }
 })
 local Tab = Window:CreateTab("Script Acess", 4483362458) -- Title, Image
