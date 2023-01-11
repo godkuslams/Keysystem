@@ -1,0 +1,44 @@
+getgenv().SecureMode = true
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Project Forecast Hub",
+   LoadingTitle = "Loading...",
+   LoadingSubtitle = "by Godku#5459",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = keysystem, -- Create a custom folder for your hub/game
+      FileName = "pfhkey"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "VtEFHgczVC", -- The Discord invite code, do not include discord.gg/
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Project Forecast Hub",
+      Subtitle = "Key System",
+      Note = "Join the discord (discord.gg/VtEFHgczVC)",
+      FileName = "PFHkey",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "a"
+   }
+})
+local Tab = Window:CreateTab("Script Acess", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("All")
+local Label = Tab:CreateLabel("Beta version. Better key system soon.")
+local Label = Tab:CreateLabel("If you execute the script and it doesn't work,")
+local Label = Tab:CreateLabel("check the script game support.")
+local Button = Tab:CreateButton({
+   Name = "Get Access"
+   Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/godkuslams/ProjectForcastMadeByGodKu/main/ProjectForecastHub'))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Destroy key UI",
+   Callback = function()
+    Rayfield:Destroy()
+   end,
+})
