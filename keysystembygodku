@@ -22,21 +22,21 @@ local Window = Rayfield:CreateWindow({
       FileName = "PFHkey",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "a"
+      Key = "RJFEKszdf32435qaDFGHGz"
    }
 })
 local Tab = Window:CreateTab("Script Acess", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("All")
 local Label = Tab:CreateLabel("Beta version. Better key system soon.")
 local Button = Tab:CreateButton({
-   Name = "Get Access"
+   Name = "Get Access",
    Callback = function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/godkuslams/ProjectForcastMadeByGodKu/main/ProjectForecastHub'))()
    end,
 })
 local Button = Tab:CreateButton({
-   Name = "Destroy key UI",
+   Name = "Destroy Key",
    Callback = function()
-    Rayfield:Destroy()
+      Rayfield:Destroy()
    end,
 })
